@@ -1,15 +1,24 @@
-import logoIcon from "../images/svg/logo.svg";
+import sprite from "../images/svg/symbol-defs.svg";
 export const Header = () => {
   return (
     <header>
-      <img
-        src={logoIcon}
-        alt="logo"
-      />
+      <span>
+        <svg
+          width={104}
+          height={28}
+        >
+          <use href={sprite + `#logo`} />
+        </svg>
+      </span>
+      <button type="button">
+        Menu
+        <svg
+          width={28}
+          height={28}
+        >
+          <use href={sprite + `#menu`} />
+        </svg>
+      </button>
     </header>
-    //   <button>
-
-    //           Menu
-    //   </button>
   );
 };
