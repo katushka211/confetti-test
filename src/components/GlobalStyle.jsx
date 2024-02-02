@@ -20,8 +20,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-weight: 400;
-  line-height: 1.29;
+  font-weight: 500;
+  line-height: normal;
 }
 
 
