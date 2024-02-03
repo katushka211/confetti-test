@@ -1,6 +1,5 @@
 import sprite from '../images/svg/symbol-defs.svg';
 import { HeaderWrap } from './Header.styled';
-import { Text } from './Header.styled';
 export const Header = () => {
   return (
     <HeaderWrap>
@@ -9,7 +8,6 @@ export const Header = () => {
           <use href={sprite + `#logo`} />
         </svg>
       </div>
-      <Text>Hello, world</Text>
       <div>
         <span>Menu</span>
         <svg width={28} height={28}>
