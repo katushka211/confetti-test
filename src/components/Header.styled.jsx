@@ -8,3 +8,7 @@ export const HeaderWrap = styled.header`
   justify-content: space-between;
   padding: 30px 20px 0;
 `;
+
+export const Text = styled.p`
+  font-family: 'Anzeigen';
+`;

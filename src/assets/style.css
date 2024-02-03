@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Anzeigen';
+  src: url('../fonts/anzeigengrot.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('../fonts/Inter-Medium.ttf');
+  font-weight: 500;
+  font-style: normal;
+}

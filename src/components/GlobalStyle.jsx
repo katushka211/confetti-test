@@ -1,5 +1,5 @@
-import { createGlobalStyle } from "styled-components";
-import "modern-normalize";
+import { createGlobalStyle } from 'styled-components';
+import 'modern-normalize';
 
 export const GlobalStyle = createGlobalStyle`
 html {
@@ -16,10 +16,8 @@ body {
   margin: 0;
   font-family:
     'Inter',
-    'Anzeigen Grotesk T',
+    'Anzeigen',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   font-weight: 500;
   line-height: normal;
 }
