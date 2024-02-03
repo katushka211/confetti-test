@@ -1,14 +1,23 @@
-import { Background, HeroSection } from './Hero.styled';
+import {
+  Background,
+  BalloonImage,
+  HeaderText,
+  HeaderTextSecondary,
+  HeroSection,
+} from './Hero.styled';
 
 export const Hero = () => {
   return (
     <HeroSection>
-      <Background></Background>
+      <Background>
+        <BalloonImage src="/images/ballons1.png" />
+      </Background>
       <div>
-        <h1>
-          Tworzymy unikalne i niepowtarzalne <span>dekoracje balonowe</span>
+        <HeaderText>
+          Tworzymy unikalne i niepowtarzalne{' '}
+          <HeaderTextSecondary>dekoracje balonowe </HeaderTextSecondary>
           na imprezy
-        </h1>
+        </HeaderText>
       </div>
     </HeroSection>
   );
