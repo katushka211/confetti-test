@@ -1,24 +1,20 @@
-import sprite from "../images/svg/symbol-defs.svg";
+import sprite from '../images/svg/symbol-defs.svg';
+import { HeaderWrap } from './Header.styled';
 export const Header = () => {
   return (
-    <header>
-      <span>
-        <svg
-          width={104}
-          height={28}
-        >
+    <HeaderWrap>
+      <div>
+        <svg width={104} height={28}>
           <use href={sprite + `#logo`} />
         </svg>
-      </span>
-      <button type="button">
-        Menu
-        <svg
-          width={28}
-          height={28}
-        >
+      </div>
+
+      <div>
+        <span>Menu</span>
+        <svg width={28} height={28}>
           <use href={sprite + `#menu`} />
         </svg>
-      </button>
-    </header>
+      </div>
+    </HeaderWrap>
   );
 };
