@@ -6,9 +6,8 @@ import { theme } from './utils/theme';
 function App() {
   return (
     <>
-      <ThemeProvider theme={theme}></ThemeProvider>
+      <ThemeProvider theme={theme} />
       <Header />
-      <ThemeProvider />
     </>
   );
 }
