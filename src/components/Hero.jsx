@@ -1,3 +1,4 @@
+import { Container } from './Hero.styled';
 import {
   Background,
   BalloonImage,
@@ -12,13 +13,13 @@ export const Hero = () => {
       <Background>
         <BalloonImage src="/images/ballons1.png" />
       </Background>
-      <div>
+      <Container>
         <HeaderText>
-          Tworzymy unikalne i niepowtarzalne{' '}
+          Tworzymy unikalne <br></br>i niepowtarzalne{' '}
           <HeaderTextSecondary>dekoracje balonowe </HeaderTextSecondary>
           na imprezy
         </HeaderText>
-      </div>
+      </Container>
     </HeroSection>
   );
 };

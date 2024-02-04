@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const HeroSection = styled.section`
   position: relative;
-  max-width: 480px;
+  max-width: 100%;
   min-height: 574px;
   /* margin: 0 auto; */
   background-color: #fff;
@@ -13,11 +13,10 @@ export const HeroSection = styled.section`
   @media (min-width: ${p => p.theme.media.m}) {
     background-image: url('/images/bgtablet.png');
     /* max-width: 768px; */
-    /* min-height: 800px; */
+    min-height: 800px;
   }
   @media (min-width: ${p => p.theme.media.l}) {
     background-image: url('/images/bgdesc.png');
-    /* min-width: 1280px; */
   }
 `;
 
@@ -71,4 +70,22 @@ export const HeaderText = styled.h1`
 
 export const HeaderTextSecondary = styled.span`
   color: ${p => p.theme.colors.main};
+`;
+
+export const Container = styled.div`
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+
+  @media (min-width: ${p => p.theme.media.s}) {
+    width: 319px;
+  }
+
+  @media (min-width: ${p => p.theme.media.m}) {
+    width: 484px;
+  }
+
+  @media (min-width: ${p => p.theme.media.l}) {
+    width: 771px;
+  }
 `;

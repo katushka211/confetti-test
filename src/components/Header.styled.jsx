@@ -4,20 +4,21 @@ export const HeaderWrap = styled.header`
   position: absolute;
   z-index: 1;
   width: 100%;
+`;
+
+export const Container = styled.div`
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 20px 0;
-  > * {
-    margin: 0 auto;
-    max-width: 100%;
-  }
+
   @media (min-width: ${p => p.theme.media.m}) {
-    width: 604px;
+    width: 708px;
     padding-top: 31px;
   }
   @media (min-width: ${p => p.theme.media.l}) {
-    width: 1034px;
+    width: 1170px;
     padding: 37px 112px 0;
   }
 `;
@@ -38,4 +39,5 @@ export const MenuText = styled.span`
   line-height: 0.9;
   letter-spacing: -0.24px;
   text-transform: uppercase;
+  justify-content: center;
 `;
