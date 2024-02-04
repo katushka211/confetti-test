@@ -10,9 +10,6 @@ import {
 export const Hero = () => {
   return (
     <HeroSection>
-      <Background>
-        <BalloonImage src="/images/ballons1.png" />
-      </Background>
       <Container>
         <HeaderText>
           Tworzymy unikalne <br></br>i niepowtarzalne{' '}
@@ -20,6 +17,9 @@ export const Hero = () => {
           na imprezy
         </HeaderText>
       </Container>
+      <Background>
+        <BalloonImage src="/images/ballons1.png" />
+      </Background>
     </HeroSection>
   );
 };
