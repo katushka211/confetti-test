@@ -11,7 +11,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <Header />
         <Hero />
-        {/* <AboutUs /> */}
+        <AboutUs />
         <GlobalStyle />
       </ThemeProvider>
     </>
