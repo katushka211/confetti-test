@@ -8,7 +8,7 @@ export const HeroSection = styled.section`
   background-size: cover;
   background-position: inherit;
   background-repeat: no-repeat;
-  /* text-align: center; */
+  overflow: hidden;
   @media (min-width: ${p => p.theme.media.m}) {
     background-image: url('/images/bgtablet.png');
     padding-top: 247px;
@@ -29,8 +29,8 @@ export const BackgroundLeft = styled.div`
   width: 254px;
   height: 254px;
   background-image: url('/images/ballons1.png');
-  background-size: cover;
-  background-position: inherit;
+  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
 
@@ -41,8 +41,10 @@ export const BackgroundLeft = styled.div`
     height: 420px;
   }
   @media (min-width: ${p => p.theme.media.l}) {
-    top: 118px;
-    left: 67px;
+    top: 65px;
+    left: 35px;
+    width: 570px;
+    height: 570px;
     overflow: visible;
     transform: rotate(-30.8deg);
   }
@@ -52,13 +54,13 @@ export const BackgroundRight = styled.div`
   position: absolute;
   z-index: -1;
   top: 270px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   right: -65px;
   width: 239px;
   height: 239px;
-  background-image: url('/images/ballons2.png');
-  background-size: cover;
-  background-position: inherit;
+  background-image: url('/images/balloons2.png');
+  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
 
@@ -69,14 +71,14 @@ export const BackgroundRight = styled.div`
     height: 405px;
   }
   @media (min-width: ${p => p.theme.media.l}) {
-    top: 260px;
-    right: -48px;
-    /* top: 118px;
-    left: 67px; */
+    top: 240px;
+    right: -60px;
+
     width: 570px;
     height: 570px;
     overflow: visible;
-    /* transform: rotate(-30.8deg); */
+    overflow: hidden;
+    transform: rotate(-9deg);
   }
 `;
 
