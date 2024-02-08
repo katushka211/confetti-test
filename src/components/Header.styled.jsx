@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const HeaderWrap = styled.header`
   position: absolute;
-  z-index: 2;
+  z-index: 5;
   width: 100%;
 `;
 
