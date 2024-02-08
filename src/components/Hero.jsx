@@ -1,10 +1,10 @@
 import { Container } from './Hero.styled';
 import {
-  Background,
-  // BalloonImage,
+  HeroSection,
+  BackgroundLeft,
+  BackgroundRight,
   HeaderText,
   HeaderTextSecondary,
-  HeroSection,
 } from './Hero.styled';
 
 export const Hero = () => {
@@ -17,9 +17,8 @@ export const Hero = () => {
           na imprezy
         </HeaderText>
       </Container>
-      <Background>
-        {/* <BalloonImage src="/images/ballons1.png" /> */}
-      </Background>
+      <BackgroundLeft />
+      <BackgroundRight />
     </HeroSection>
   );
 };
