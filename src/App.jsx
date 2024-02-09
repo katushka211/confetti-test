@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import { theme } from './utils/theme';
 import { GlobalStyle } from './components/GlobalStyle';
 import { Hero } from './components/Hero';
+import { AboutUs } from './components/AboutUs';
 
 function App() {
   return (

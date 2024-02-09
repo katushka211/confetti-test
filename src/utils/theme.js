@@ -4,6 +4,8 @@ export const theme = {
     extraText: '#565148',
     accent: '#ED4B5E',
     extraAccent: '#FFEFF0',
+    darkGray: '#444',
+    gray: '#808080',
   },
   media: {
     xs: '360px',
