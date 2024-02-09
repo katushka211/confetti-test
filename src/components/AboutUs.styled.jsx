@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 export const AboutUsSection = styled.section`
   margin: 50px 0 0;
+  @media (min-width: ${p => p.theme.media.m}) {
+    margin: 80px 0 0;
+  }
 `;
 
 export const Container = styled.div`
@@ -17,10 +20,6 @@ export const AboutWrapper = styled.div`
   flex-direction: column;
   gap: 16px;
   max-width: 390px;
-
-  /* @media (min-width: ${p => p.theme.media.s}) {
-    max-width: 390px;
-  } */
 
   @media (min-width: ${p => p.theme.media.m}) {
     max-width: 584px;
@@ -77,10 +76,12 @@ export const CardsList = styled.ul`
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   gap: 24px;
-  padding: 0 20px;
-  @media (min-width: ${p => p.theme.media.s}) {
+  margin: 36px 0 0;
+  @media (min-width: ${p => p.theme.media.m}) {
+    margin: 48px 0 0;
   }
   @media (min-width: ${p => p.theme.media.l}) {
     grid-template-columns: repeat(2, 1fr);
+    margin: 64px 0 0;
   }
 `;

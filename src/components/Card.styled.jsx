@@ -1,6 +1,12 @@
 import styled from 'styled-components';
 
 export const CardWrapper = styled.li`
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: space-between;
   background-color: ${props => props.color};
   width: 100%;
   height: 253px;
@@ -12,6 +18,8 @@ export const CardWrapper = styled.li`
   @media (min-width: ${p => p.theme.media.m}) {
     width: 596px;
     height: auto;
+    gap: 40px;
+    padding: 48px;
   }
 `;
 
@@ -25,8 +33,10 @@ export const CardTitle = styled.h3`
   letter-spacing: -0.24px;
   text-transform: uppercase;
   @media (min-width: ${p => p.theme.media.m}) {
+    padding-right: 132px;
     font-size: 40px;
     letter-spacing: -0.4px;
+    line-height: 0.8;
   }
   @media (min-width: ${p => p.theme.media.l}) {
     line-height: 0.95;

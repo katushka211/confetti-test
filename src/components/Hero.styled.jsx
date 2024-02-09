@@ -113,10 +113,6 @@ export const Container = styled.div`
   margin: 0 auto;
   width: 319px;
 
-  /* @media (min-width: ${p => p.theme.media.s}) {
-    width: 319px;
-  } */
-
   @media (min-width: ${p => p.theme.media.m}) {
     width: 484px;
   }
