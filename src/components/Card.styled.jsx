@@ -50,4 +50,11 @@ export const CardText = styled.p`
   font-style: normal;
   line-height: 1.45;
   letter-spacing: -0.16px;
+  @media (min-width: ${p => p.theme.media.m}) {
+    font-size: 20px;
+    letter-spacing: -0.2px;
+  }
+  @media (min-width: ${p => p.theme.media.l}) {
+    line-height: 1.35;
+  }
 `;
