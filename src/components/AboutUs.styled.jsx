@@ -1,42 +1,45 @@
 import styled from 'styled-components';
 export const AboutUsSection = styled.section`
-  padding: 0 20px;
-  text-align: center;
+  margin: 50px 0 0;
+`;
 
-  @media (min-width: ${p => p.theme.media.m}) {
-    padding: 0 30px;
-  }
-  @media (min-width: ${p => p.theme.media.l}) {
-    padding: 0 112px;
-  }
+export const Container = styled.div`
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const AboutWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: 16px;
-  align-items: center;
-  text-align: center;
-  margin: 0 auto;
-  width: 320px;
-  height: auto;
+  max-width: 390px;
+
+  /* @media (min-width: ${p => p.theme.media.s}) {
+    max-width: 390px;
+  } */
+
   @media (min-width: ${p => p.theme.media.m}) {
-    width: 584px;
+    max-width: 584px;
   }
+
   @media (min-width: ${p => p.theme.media.l}) {
-    width: 700px;
     gap: 24px;
+    max-width: 700px;
   }
 `;
 
 export const AboutTitle = styled.h2`
-  display: flex;
-  flex-direction: column;
+  text-align: center;
   font-family: 'Anzeigen';
   font-size: 36px;
   font-weight: 500;
   font-style: normal;
   letter-spacing: -0.36px;
+  line-height: 0.8;
   text-transform: uppercase;
   word-wrap: break-word;
   color: ${p => p.theme.colors.main};
@@ -51,6 +54,7 @@ export const AboutTitle = styled.h2`
   @media (min-width: ${p => p.theme.media.l}) {
     font-size: 56px;
     letter-spacing: -0.56px;
+    padding: 0 50px;
   }
 `;
 
@@ -66,5 +70,17 @@ export const AboutText = styled.p`
   @media (min-width: ${p => p.theme.media.m}) {
     font-size: 24px;
     letter-spacing: -0.24px;
+  }
+`;
+
+export const CardsList = styled.ul`
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 24px;
+  padding: 0 20px;
+  @media (min-width: ${p => p.theme.media.s}) {
+  }
+  @media (min-width: ${p => p.theme.media.l}) {
+    grid-template-columns: repeat(2, 1fr);
   }
 `;

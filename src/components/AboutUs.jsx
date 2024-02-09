@@ -3,6 +3,8 @@ import {
   AboutTitle,
   AboutUsSection,
   AboutWrapper,
+  CardsList,
+  Container,
 } from './AboutUs.styled';
 import { Card } from './Card';
 
@@ -35,24 +37,25 @@ export const AboutUs = () => {
   ];
   return (
     <AboutUsSection>
-      <AboutWrapper>
-        <AboutTitle>Kreatywny zespół dekoratorów</AboutTitle>
-        <AboutText>
-          Młodzi i energiczni, rozwijający działalność w zakresie tworzenia
-          dekoracji na imprezy i wydarzenia
-        </AboutText>
-      </AboutWrapper>
-      <ul>
-        {cardsData.map((card, index) => (
-          <li key={index}>
+      <Container>
+        <AboutWrapper>
+          <AboutTitle>Kreatywny zespół dekoratorów</AboutTitle>
+          <AboutText>
+            Młodzi i energiczni, rozwijający działalność w zakresie tworzenia
+            dekoracji na imprezy i wydarzenia
+          </AboutText>
+        </AboutWrapper>
+        <CardsList>
+          {cardsData.map((card, index) => (
             <Card
               title={card.title}
               description={card.description}
               bgColor={card.bgColor}
+              key={index}
             />
-          </li>
-        ))}
-      </ul>
+          ))}
+        </CardsList>
+      </Container>
     </AboutUsSection>
   );
 };

@@ -6,6 +6,7 @@ export const theme = {
     extraAccent: '#FFEFF0',
     darkGray: '#444',
     gray: '#808080',
+    white: '#FFF',
   },
   media: {
     xs: '360px',

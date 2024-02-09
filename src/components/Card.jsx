@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
-import { CardWrapper } from './Card.styled';
+import { CardText, CardTitle, CardWrapper } from './Card.styled';
 
 export const Card = ({ title, description, bgColor }) => {
   return (
-    <CardWrapper bgColor={bgColor}>
-      <h3>{title}</h3>
-      <p>{description}</p>
+    <CardWrapper color={bgColor}>
+      <CardTitle>{title}</CardTitle>
+      <CardText>{description}</CardText>
     </CardWrapper>
   );
 };
