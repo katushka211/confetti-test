@@ -12,7 +12,7 @@ export const HeroSection = styled.section`
   @media (min-width: ${p => p.theme.media.m}) {
     background-image: url('/images/bgtablet.png');
     padding-top: 247px;
-    padding-bottom: 187px;
+    padding-bottom: 247px;
   }
   @media (min-width: ${p => p.theme.media.l}) {
     background-image: url('/images/bgdesk.png');
