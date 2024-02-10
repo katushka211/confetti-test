@@ -1,6 +1,6 @@
-import { Container } from './AboutUs.styled';
+import { Container } from './Reviews.styled';
 import { Review } from './Review';
-import { ReviewTitle } from './Reviews.styled';
+import { ReviewTitle, ReviewsList } from './Reviews.styled';
 
 export const Reviews = () => {
   const reviewsData = [
@@ -22,7 +22,7 @@ dziękuję za współpracę 🫶`,
     <section>
       <Container>
         <ReviewTitle>Recenzje</ReviewTitle>
-        <ul>
+        <ReviewsList>
           {reviewsData.map((review, index) => (
             <Review
               reviewText={review.review}
@@ -30,7 +30,7 @@ dziękuję za współpracę 🫶`,
               key={index}
             />
           ))}
-        </ul>
+        </ReviewsList>
       </Container>
     </section>
   );

@@ -1,10 +1,5 @@
 import styled from 'styled-components';
 
-// export const Сontainer = styled.div`
-//   margin: 0 auto;
-//   padding: 0 20px;
-// `;
-
 export const ReviewTitle = styled.h2`
   margin-top: 80px;
   margin-bottom: 36px;
@@ -29,5 +24,29 @@ export const ReviewTitle = styled.h2`
     margin-bottom: 64px;
     font-size: 100px;
     letter-spacing: -1px;
+  }
+`;
+
+export const Container = styled.div`
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  @media (min-width: ${p => p.theme.media.s}) {
+    width: 480px;
+  }
+  @media (min-width: ${p => p.theme.media.m}) {
+    width: 768px;
+  }
+  @media (min-width: ${p => p.theme.media.l}) {
+    width: 1280px;
+  }
+`;
+
+export const ReviewsList = styled.ul`
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  @media (min-width: ${p => p.theme.media.m}) {
+    flex-direction: row;
   }
 `;
