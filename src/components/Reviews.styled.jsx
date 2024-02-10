@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const ReviewTitle = styled.h2`
+export const Title = styled.h2`
   margin-top: 80px;
   margin-bottom: 36px;
   color: ${p => p.theme.colors.accent};
