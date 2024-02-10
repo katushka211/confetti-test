@@ -18,3 +18,24 @@ export const ReviewWrap = styled.li`
     padding: 36px 24px;
   }
 `;
+
+export const ReviewText = styled.p`
+  color: ${p => p.theme.colors.main};
+  font-family: 'Inter';
+  font-size: 18px;
+  font-style: normal;
+  line-height: 1.3;
+  letter-spacing: -0.18px;
+  @media (min-width: ${p => p.theme.media.l}) {
+    font-size: 24px;
+    letter-spacing: -0.24px;
+  }
+`;
+
+export const ReviewAuthor = styled.p`
+  color: #565148;
+  font-family: 'Inter';
+  font-size: 16px;
+  font-style: normal;
+  letter-spacing: -0.16px;
+`;

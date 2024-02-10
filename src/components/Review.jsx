@@ -1,10 +1,10 @@
 import PropTypes from 'prop-types';
-import { ReviewWrap } from './Review.styled';
+import { ReviewAuthor, ReviewText, ReviewWrap } from './Review.styled';
 export const Review = ({ reviewText, author }) => {
   return (
     <ReviewWrap>
-      <p>{reviewText}</p>
-      <p>{author}</p>
+      <ReviewText>{reviewText}</ReviewText>
+      <ReviewAuthor>{author}</ReviewAuthor>
     </ReviewWrap>
   );
 };
