@@ -43,10 +43,7 @@ export const Container = styled.div`
 `;
 
 export const ReviewsList = styled.ul`
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 24px;
-  @media (min-width: ${p => p.theme.media.m}) {
-    flex-direction: row;
-  }
 `;
