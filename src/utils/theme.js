@@ -7,6 +7,7 @@ export const theme = {
     darkGray: '#444',
     gray: '#808080',
     white: '#FFF',
+    rose: '#FFEFF0',
   },
   media: {
     xs: '360px',
