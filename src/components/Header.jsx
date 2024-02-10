@@ -4,10 +4,11 @@ export const Header = () => {
   return (
     <HeaderWrap>
       <Container>
-        <svg width={104} height={28}>
-          <use href={sprite + `#logo`} />
-        </svg>
-
+        <a href="/">
+          <svg width={104} height={28}>
+            <use href={sprite + `#logo`} />
+          </svg>
+        </a>
         <MenuWrap>
           <MenuText>Menu</MenuText>
           <svg width={24} height={24}>

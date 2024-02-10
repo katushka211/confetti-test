@@ -6,6 +6,7 @@ import { Hero } from './components/Hero';
 import { AboutUs } from './components/AboutUs';
 import { Reviews } from './components/Reviews';
 import { Contacts } from './components/Contacts';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <AboutUs />
         <Reviews />
         <Contacts />
+        <Footer />
         <GlobalStyle />
       </ThemeProvider>
     </>
