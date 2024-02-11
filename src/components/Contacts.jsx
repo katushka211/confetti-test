@@ -27,9 +27,7 @@ export const Contacts = () => {
           confettibalony@gmail.com
         </ContactsLink>
       </ContactsWrap>
-      <div>
-        <Form />
-      </div>
+      <Form />
     </ContactsSection>
   );
 };
