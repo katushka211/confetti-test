@@ -6,6 +6,7 @@ import {
   ContactsText,
   ContactsWrap,
 } from './Contacts.styled';
+import { Form } from './Form';
 
 export const Contacts = () => {
   return (
@@ -26,6 +27,9 @@ export const Contacts = () => {
           confettibalony@gmail.com
         </ContactsLink>
       </ContactsWrap>
+      <div>
+        <Form />
+      </div>
     </ContactsSection>
   );
 };
