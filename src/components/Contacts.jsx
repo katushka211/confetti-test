@@ -1,6 +1,8 @@
 import { Title } from './Reviews.styled';
 import sprite from '../images/svg/symbol-defs.svg';
 import {
+  BackgroundLeft,
+  BackgroundRight,
   ContactsLink,
   ContactsSection,
   ContactsText,
@@ -28,6 +30,9 @@ export const Contacts = () => {
         </ContactsLink>
       </ContactsWrap>
       <Form />
+      <BackgroundLeft />
+      <BackgroundRight />
+      <div></div>
     </ContactsSection>
   );
 };
