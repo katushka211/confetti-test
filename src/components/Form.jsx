@@ -1,25 +1,34 @@
-import { ContactForm, ContainerForm, InputWrap } from './Form.styled';
+import {
+  Button,
+  ContactForm,
+  ContainerForm,
+  Input,
+  InputWrap,
+  Label,
+  TextArea,
+} from './Form.styled';
 
 export const Form = () => {
   return (
     <ContainerForm>
       <ContactForm>
         <InputWrap>
-          <label htmlFor="name">Imię*</label>
-          <input type="text" name="name" placeholder="Imię" />
+          <Label htmlFor="name">Imię*</Label>
+          <Input type="text" name="name" placeholder="Imię" />
         </InputWrap>
         <InputWrap>
-          <label htmlFor="email">E-mail*</label>
-          <input type="email" name="email" placeholder="mail@gmail.com" />
+          <Label htmlFor="email">E-mail*</Label>
+          <Input type="email" name="email" placeholder="mail@gmail.com" />
         </InputWrap>
         <InputWrap>
-          <label htmlFor="message">Wiadomość</label>
-          <textarea
+          <Label htmlFor="message">Wiadomość</Label>
+          <TextArea
             type="text"
             name="message"
             placeholder="Twoja wiadomość..."
           />
         </InputWrap>
+        <Button type="submit">Wyślij</Button>
       </ContactForm>
     </ContainerForm>
   );
