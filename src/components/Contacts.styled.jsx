@@ -2,6 +2,16 @@ import styled from 'styled-components';
 
 export const ContactsSection = styled.section`
   position: relative;
+  @media (min-width: ${p => p.theme.media.l}) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    align-items: center;
+    max-width: 1280px;
+  }
+`;
+
+export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -75,13 +85,10 @@ export const BackgroundLeft = styled.div`
     width: 540px;
     height: 540px;
     transform: rotate(-38.8deg);
-  }
-  @media (min-width: ${p => p.theme.media.l}) {
-    /* top: 65px;
-    left: 35px;
-    width: 570px;
-    height: 570px;
-    overflow: visible; */
+    @media (min-width: ${p => p.theme.media.l}) {
+      overflow: hidden;
+      display: none;
+    }
   }
 `;
 
@@ -110,6 +117,6 @@ export const BackgroundRight = styled.div`
     width: 570px;
     height: 570px;
     overflow: visible;
-    overflow: hidden;
+    display: none;
   }
 `;
