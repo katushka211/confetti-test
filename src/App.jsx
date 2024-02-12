@@ -7,16 +7,25 @@ import { AboutUs } from './components/AboutUs';
 import { Reviews } from './components/Reviews';
 import { Contacts } from './components/Contacts';
 import { Footer } from './components/Footer';
+import { Element } from 'react-scroll';
 
 function App() {
   return (
     <>
       <ThemeProvider theme={theme}>
-        <Header />
+        <Element name="main">
+          <Header />
+        </Element>
         <Hero />
-        <AboutUs />
-        <Reviews />
-        <Contacts />
+        <Element name="about">
+          <AboutUs />
+        </Element>
+        <Element name="reviews">
+          <Reviews />
+        </Element>
+        <Element name="contacts">
+          <Contacts />
+        </Element>
         <Footer />
         <GlobalStyle />
       </ThemeProvider>

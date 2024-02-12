@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import sprite from '../images/svg/symbol-defs.svg';
+
 import {
   Container,
   HeaderWrap,
@@ -7,8 +8,10 @@ import {
   MenuText,
   MenuWrap,
 } from './Header.styled';
+import { BurgerMenu } from './BurgerMenu';
 export const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  // const [isOpened, setIsOpenes] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
       const scrolled = window.scrollY > 0;
@@ -22,6 +25,7 @@ export const Header = () => {
 
   return (
     <HeaderWrap scrolled={isScrolled.toString()}>
+      <BurgerMenu />
       <Container>
         <Logo href="/" scrolled={isScrolled.toString()}>
           <svg width={104} height={28}>
