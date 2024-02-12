@@ -29,11 +29,6 @@ export const Header = () => {
           </svg>
         </Logo>
         <MenuWrap>
-          {/* {isScrolled ? (
-            <MenuText style={{ display: 'none' }}>Menu</MenuText>
-          ) : (
-            <MenuText>Menu</MenuText>
-          )} */}
           <MenuText scrolled={isScrolled}>Menu</MenuText>
           <svg width={24} height={24}>
             <use href={sprite + `#menu`} />

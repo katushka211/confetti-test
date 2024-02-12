@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 export const HeroSection = styled.section`
   position: relative;
@@ -21,6 +21,20 @@ export const HeroSection = styled.section`
   }
 `;
 
+const moveBallon = keyframes`
+  /* 0% { transform: translateX(0px) translateY(0px); }
+  50% { transform: translateX(20px) translateY(-20px); }
+  100% { transform: translateX(0px) translateY(0px); } */
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-20px);
+    opacity: 0.8;
+  }
+`;
+
 export const BackgroundLeft = styled.div`
   position: absolute;
   z-index: -1;
@@ -33,7 +47,7 @@ export const BackgroundLeft = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
-
+  animation: ${moveBallon} 3s ease infinite;
   @media (min-width: ${p => p.theme.media.m}) {
     top: 97px;
     left: -148px;
@@ -63,6 +77,7 @@ export const BackgroundRight = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   overflow: hidden;
+  animation: ${moveBallon} 3s ease infinite;
 
   @media (min-width: ${p => p.theme.media.m}) {
     top: 339px;

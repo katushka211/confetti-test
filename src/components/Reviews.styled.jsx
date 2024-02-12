@@ -6,7 +6,7 @@ export const ReviewSection = styled.section`
     margin-top: 80px;
   }
   @media (min-width: ${p => p.theme.media.l}) {
-    width: 100px;
+    margin-top: 100px;
   }
 `;
 
