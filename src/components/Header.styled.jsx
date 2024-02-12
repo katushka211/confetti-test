@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const HeaderWrap = styled.header`
-  position: absolute;
+  position: fixed;
   z-index: 5;
   width: 100%;
 `;
@@ -40,4 +40,9 @@ export const MenuText = styled.span`
   letter-spacing: -0.24px;
   text-transform: uppercase;
   justify-content: center;
+  visibility: ${p => (p.scrolled ? 'hidden' : 'visible')};
+`;
+
+export const Logo = styled.a`
+  visibility: ${p => (p.scrolled ? 'hidden' : 'visible')};
 `;
