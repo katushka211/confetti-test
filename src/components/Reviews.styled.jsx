@@ -1,7 +1,16 @@
 import styled from 'styled-components';
 
+export const ReviewSection = styled.section`
+  margin-top: 124px;
+  @media (min-width: ${p => p.theme.media.m}) {
+    margin-top: 80px;
+  }
+  @media (min-width: ${p => p.theme.media.l}) {
+    width: 100px;
+  }
+`;
+
 export const Title = styled.h2`
-  margin-top: 80px;
   margin-bottom: 36px;
   color: ${p => p.theme.colors.accent};
 

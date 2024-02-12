@@ -3,6 +3,10 @@ import styled from 'styled-components';
 export const ContactsSection = styled.section`
   position: relative;
   overflow: hidden;
+  margin-top: 124px;
+  @media (min-width: ${p => p.theme.media.m}) {
+    margin-top: 184px;
+  }
   @media (min-width: ${p => p.theme.media.l}) {
     display: flex;
     justify-content: space-between;

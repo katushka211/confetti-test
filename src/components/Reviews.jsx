@@ -1,36 +1,41 @@
-import { Container, Title, ReviewsList } from './Reviews.styled';
+import { Container, Title, ReviewsList, ReviewSection } from './Reviews.styled';
 import { Review } from './Review';
+import reviewsData from '../utils/reviewsData.json';
+import { useEffect, useState } from 'react';
+import { ReviewSlider } from './ReviewSlider';
 
 export const Reviews = () => {
-  const reviewsData = [
-    {
-      review: `Baaardzo super ścianka ,
-dziękuję za współpracę 🫶`,
-      author: 'Anetta Ostalczyk ',
-    },
-    {
-      review: `Jeszcze raz wielkie dzięki! Ciężko nam było foty robić jak ustawili te stoły 🥰 ale sam klimat i dekoracja robiła meegaaa wrażenie!`,
-      author: 'Aleksandra Murawska',
-    },
-    {
-      review: `Ścianka była piękna , bardzo delikatna , Jeszcze raz bardzo dziękuję )`,
-      author: 'Katia Maksymiw',
-    },
-  ];
+  const [isDesktop, setIsDesktop] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth > 1280);
+    };
+    window.addEventListener('resize', handleResize);
+    handleResize();
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   return (
-    <section>
+    <ReviewSection>
       <Container>
         <Title>Recenzje</Title>
-        <ReviewsList>
-          {reviewsData.map((review, index) => (
-            <Review
-              reviewText={review.review}
-              author={review.author}
-              key={index}
-            />
-          ))}
-        </ReviewsList>
+        {isDesktop ? (
+          <ReviewsList>
+            {reviewsData.map((review, index) => (
+              <Review
+                reviewText={review.review}
+                author={review.author}
+                key={index}
+              />
+            ))}
+          </ReviewsList>
+        ) : (
+          <ReviewSlider />
+        )}
       </Container>
-    </section>
+    </ReviewSection>
   );
 };
