@@ -22,9 +22,6 @@ export const HeroSection = styled.section`
 `;
 
 const moveBallon = keyframes`
-  /* 0% { transform: translateX(0px) translateY(0px); }
-  50% { transform: translateX(20px) translateY(-20px); }
-  100% { transform: translateX(0px) translateY(0px); } */
   0%, 100% {
     transform: translateY(0);
     opacity: 1;

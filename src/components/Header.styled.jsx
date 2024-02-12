@@ -40,9 +40,9 @@ export const MenuText = styled.span`
   letter-spacing: -0.24px;
   text-transform: uppercase;
   justify-content: center;
-  visibility: ${p => (p.scrolled ? 'hidden' : 'visible')};
+  visibility: ${p => (p.scrolled === 'true' ? 'hidden' : 'visible')};
 `;
 
 export const Logo = styled.a`
-  visibility: ${p => (p.scrolled ? 'hidden' : 'visible')};
+  visibility: ${p => (p.scrolled === 'true' ? 'hidden' : 'visible')};
 `;

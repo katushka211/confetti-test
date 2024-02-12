@@ -75,5 +75,5 @@ export const ReviewSlider = () => {
 
 ReviewSlider.propTypes = {
   className: PropTypes.string,
-  onClick: PropTypes.func.isRequired,
+  onClick: PropTypes.func,
 };

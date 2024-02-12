@@ -21,15 +21,15 @@ export const Header = () => {
   }, []);
 
   return (
-    <HeaderWrap scrolled={isScrolled}>
+    <HeaderWrap scrolled={isScrolled.toString()}>
       <Container>
-        <Logo href="/" scrolled={isScrolled}>
+        <Logo href="/" scrolled={isScrolled.toString()}>
           <svg width={104} height={28}>
             <use href={sprite + `#logo`} />
           </svg>
         </Logo>
         <MenuWrap>
-          <MenuText scrolled={isScrolled}>Menu</MenuText>
+          <MenuText scrolled={isScrolled.toString()}>Menu</MenuText>
           <svg width={24} height={24}>
             <use href={sprite + `#menu`} />
           </svg>
