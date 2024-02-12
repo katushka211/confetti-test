@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const ContactsSection = styled.section`
   position: relative;
+  overflow: hidden;
   @media (min-width: ${p => p.theme.media.l}) {
     display: flex;
     justify-content: space-between;
@@ -86,8 +87,6 @@ export const BackgroundLeft = styled.div`
     height: 540px;
     transform: rotate(-38.8deg);
     @media (min-width: ${p => p.theme.media.l}) {
-      overflow: hidden;
-      display: none;
     }
   }
 `;
@@ -116,7 +115,5 @@ export const BackgroundRight = styled.div`
 
     width: 570px;
     height: 570px;
-    overflow: visible;
-    display: none;
   }
 `;

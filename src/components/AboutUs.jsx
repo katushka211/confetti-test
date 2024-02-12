@@ -6,12 +6,26 @@ import {
   CardsList,
   Container,
 } from './AboutUs.styled';
-// import { Card } from './Card';
-// import cardsData from '../utils/cardsData.json';
+import { Card } from './Card';
+import cardsData from '../utils/cardsData.json';
+import { useEffect, useState } from 'react';
 import { AboutSlider } from './AboutSlider';
+
 // import { AboutSlider } from './AboutSlider';
 
 export const AboutUs = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    window.addEventListener('resize', handleResize);
+    handleResize();
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   return (
     <AboutUsSection>
       <Container>
@@ -22,19 +36,23 @@ export const AboutUs = () => {
             dekoracji na imprezy i wydarzenia
           </AboutText>
         </AboutWrapper>
-        <CardsList>
-          {/* {cardsData.map((card, index) => (
-            <Card
-              title={card.title}
-              description={card.description}
-              bgColor={card.bgColor}
-              paddingRight={card.paddingRight}
-              key={index}
-            />
-          ))} */}
-        </CardsList>
+        {isMobile ? (
+          <AboutSlider />
+        ) : (
+          <CardsList>
+            {cardsData.map((card, index) => (
+              <Card
+                title={card.title}
+                description={card.description}
+                bgColor={card.bgColor}
+                paddingRight={card.paddingRight}
+                key={index}
+              />
+            ))}
+          </CardsList>
+        )}
       </Container>
-      <AboutSlider />
+      {/* <AboutSlider /> */}
     </AboutUsSection>
   );
 };

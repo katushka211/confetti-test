@@ -11,7 +11,7 @@ export const CardWrapper = styled.li`
   border-radius: 24px;
   @media (min-width: ${p => p.theme.media.s}) {
     width: 100%;
-    max-width: 400px;
+    /* max-width: 400px; */
   }
   @media (min-width: ${p => p.theme.media.m}) {
     width: 596px;
