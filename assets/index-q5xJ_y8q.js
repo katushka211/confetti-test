@@ -704,7 +704,7 @@ img {
   z-index: -1;
   width: 254px;
   height: 254px;
-  background-image: url('/images/ballons1.png');
+  background-image: url('./images/ballons1.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -726,7 +726,7 @@ img {
 `,l_=N.div`
   position: absolute;
   z-index: -1;
-  background-image: url('/images/balloons2.png');
+  background-image: url('./images/balloons2.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
