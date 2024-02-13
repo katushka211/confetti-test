@@ -21,6 +21,7 @@ export const BurgerContainer = styled.div`
   }
   @media (min-width: ${p => p.theme.media.l}) {
     width: 1280px;
+    padding: 0 112px;
   }
 `;
 
@@ -31,9 +32,11 @@ export const LogoWrap = styled.div`
   margin-bottom: 62px;
   @media (min-width: ${p => p.theme.media.m}) {
     margin-bottom: 78px;
+    padding-top: 32px;
   }
-  @media (min-width: ${p => p.theme.media.m}) {
+  @media (min-width: ${p => p.theme.media.l}) {
     margin-bottom: 100px;
+    padding-top: 37px;
   }
 `;
 

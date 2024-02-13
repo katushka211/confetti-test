@@ -20,6 +20,9 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (min-width: ${p => p.theme.media.m}) {
+    align-items: flex-start;
+  }
 `;
 
 export const ContactsText = styled.p`
