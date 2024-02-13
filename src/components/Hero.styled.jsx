@@ -65,7 +65,6 @@ export const BackgroundRight = styled.div`
   position: absolute;
   z-index: -1;
   top: 270px;
-  /* border: 1px solid red; */
   right: -65px;
   width: 239px;
   height: 239px;

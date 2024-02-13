@@ -14,12 +14,6 @@ export const StyledReviewSlider = styled(Slider)`
     justify-content: center;
   }
 
-  .slick-slide {
-    /* display: flex;
-    justify-content: center;
-    margin: 0 auto; */
-  }
-
   .slick-prev,
   .slick-next {
     background: #fff;

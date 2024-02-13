@@ -78,7 +78,6 @@ export const Form = () => {
             value={name}
             onChange={handleNameChange}
             placeholder="Imię"
-            // error={nameError}
             $hasError={!!nameError}
           />
           {nameError && <span style={{ color: 'red' }}>{nameError}</span>}
@@ -93,7 +92,6 @@ export const Form = () => {
             value={email}
             onChange={handleEmailChange}
             placeholder="mail@gmail.com"
-            // error={emailError}
             $hasError={!!emailError}
           />
           {emailError && <span style={{ color: 'red' }}>{emailError}</span>}
