@@ -20,9 +20,11 @@ export const AboutWrapper = styled.div`
   flex-direction: column;
   gap: 16px;
   max-width: 390px;
+  margin-bottom: 36px;
 
   @media (min-width: ${p => p.theme.media.m}) {
     max-width: 584px;
+    margin-bottom: 0;
   }
 
   @media (min-width: ${p => p.theme.media.l}) {
@@ -49,11 +51,11 @@ export const AboutTitle = styled.h2`
   @media (min-width: ${p => p.theme.media.m}) {
     font-size: 48px;
     letter-spacing: -0.48px;
+    padding: 0 50px;
   }
   @media (min-width: ${p => p.theme.media.l}) {
     font-size: 56px;
     letter-spacing: -0.56px;
-    padding: 0 50px;
   }
 `;
 
