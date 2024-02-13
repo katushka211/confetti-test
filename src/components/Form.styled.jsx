@@ -57,6 +57,7 @@ export const Input = styled.input`
   border-radius: 9px;
   border: 1px solid #d2d2d2;
   background: #fff;
+  color: ${props => (props.$hasError ? 'red' : 'initial')};
   &::placeholder {
     color: #888;
   }
