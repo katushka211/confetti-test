@@ -23,12 +23,6 @@ export const Container = styled.div`
   }
 `;
 
-export const MenuWrap = styled.div`
-  display: flex;
-  gap: 8px;
-  align-items: center;
-`;
-
 export const MenuText = styled.span`
   color: ${p => p.theme.colors.main};
 
@@ -45,4 +39,17 @@ export const MenuText = styled.span`
 
 export const Logo = styled.a`
   visibility: ${p => (p.scrolled === 'true' ? 'hidden' : 'visible')};
+`;
+
+export const ButtonMenu = styled.button`
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  &:hover,
+  &:focus {
+    fill: ${p => p.theme.colors.accent};
+    span {
+      color: ${p => p.theme.colors.accent};
+    }
+  }
 `;

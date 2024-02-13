@@ -5,7 +5,7 @@ export const BurgerWrap = styled.div`
   width: 100%;
   height: 100vh;
   z-index: 75;
-  /* background-color: #fff; */
+  background-color: #fff;
 `;
 
 export const BurgerContainer = styled.div`
@@ -28,6 +28,13 @@ export const LogoWrap = styled.div`
   display: flex;
   justify-content: space-between;
   padding-top: 30px;
+  margin-bottom: 62px;
+  @media (min-width: ${p => p.theme.media.m}) {
+    margin-bottom: 78px;
+  }
+  @media (min-width: ${p => p.theme.media.m}) {
+    margin-bottom: 100px;
+  }
 `;
 
 export const ButtonClose = styled.button`
@@ -42,4 +49,32 @@ export const LinkList = styled.ul`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 24px;
+  @media (min-width: ${p => p.theme.media.m}) {
+    gap: 36px;
+  }
+  @media (min-width: ${p => p.theme.media.m}) {
+    gap: 48px;
+  }
+`;
+
+export const LinkItem = styled.li`
+  color: ${p => p.theme.colors.main};
+  text-align: center;
+  font-family: 'Anzeigen';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.24px;
+  text-transform: uppercase;
+  cursor: pointer;
+  @media (min-width: ${p => p.theme.media.m}) {
+    font-size: 40px;
+    letter-spacing: -0.4px;
+  }
+  @media (min-width: ${p => p.theme.media.l}) {
+    font-size: 64px;
+    letter-spacing: -0.64px;
+  }
 `;
