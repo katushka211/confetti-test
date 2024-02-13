@@ -2,19 +2,17 @@ import styled from 'styled-components';
 
 export const ContactsSection = styled.section`
   position: relative;
-  overflow: hidden;
   margin-top: 124px;
+  overflow: hidden;
   @media (min-width: ${p => p.theme.media.m}) {
     margin-top: 184px;
   }
   @media (min-width: ${p => p.theme.media.l}) {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0 auto;
     align-items: center;
-    padding: 0 112px;
-    width: 100%;
-    overflow: hidden;
+    padding: 0 30px;
   }
 `;
 
