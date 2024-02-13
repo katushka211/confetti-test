@@ -4,18 +4,18 @@ export const HeroSection = styled.section`
   position: relative;
   padding-top: 212px;
   padding-bottom: 154px;
-  background-image: url('/images/bgmob.png');
+  background-image: url('./images/bgmob.png');
   background-size: cover;
   background-position: inherit;
   background-repeat: no-repeat;
   overflow: hidden;
   @media (min-width: ${p => p.theme.media.m}) {
-    background-image: url('/images/bgtablet.png');
+    background-image: url('./images/bgtablet.png');
     padding-top: 247px;
     padding-bottom: 247px;
   }
   @media (min-width: ${p => p.theme.media.l}) {
-    background-image: url('/images/bgdesk.png');
+    background-image: url('./images/bgdesk.png');
     padding-top: 242px;
     padding-bottom: 264px;
   }
@@ -39,7 +39,7 @@ export const BackgroundLeft = styled.div`
   left: -102px;
   width: 254px;
   height: 254px;
-  background-image: url('/images/ballons1.png');
+  background-image: url('./images/ballons1.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -68,7 +68,7 @@ export const BackgroundRight = styled.div`
   right: -65px;
   width: 239px;
   height: 239px;
-  background-image: url('/images/balloons2.png');
+  background-image: url('./images/balloons2.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
