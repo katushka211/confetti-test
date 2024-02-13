@@ -34,10 +34,11 @@ export const Contacts = () => {
           </ContactsLink>
         </ContactsWrap>
       </Wrapper>
-      <Form />
-      <BackgroundLeft />
-      <BackgroundRight />
-      <div></div>
+      <div>
+        <Form />
+        <BackgroundLeft />
+        <BackgroundRight />
+      </div>
     </ContactsSection>
   );
 };
