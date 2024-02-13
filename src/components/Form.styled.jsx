@@ -39,7 +39,7 @@ export const InputWrap = styled.div`
 
 export const Label = styled.label`
   color: #949494;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-style: normal;
   letter-spacing: -0.16px;
@@ -48,7 +48,7 @@ export const Label = styled.label`
 
 export const Input = styled.input`
   padding: 20px 24px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -67,7 +67,7 @@ export const TextArea = styled.textarea`
   height: 128px;
   padding: 20px 24px;
   resize: none;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -90,7 +90,7 @@ export const Button = styled.button`
   border-radius: 24px;
   background-color: ${p => p.theme.colors.accent};
   color: #fff;
-  font-family: 'Anzeigen';
+  font-family: 'Anzeigen', sans-serif;
   font-size: 28px;
   font-style: normal;
   font-weight: 500;

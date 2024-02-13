@@ -27,7 +27,7 @@ export const MenuText = styled.span`
   color: ${p => p.theme.colors.main};
 
   text-align: center;
-  font-family: 'Anzeigen';
+  font-family: 'Anzeigen', sans-serif;
   font-size: 24px;
   font-style: normal;
   line-height: 0.9;

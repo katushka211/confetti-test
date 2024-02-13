@@ -23,7 +23,7 @@ export const CardWrapper = styled.li`
 
 export const CardTitle = styled.h3`
   color: ${p => p.theme.colors.white};
-  font-family: 'Anzeigen';
+  font-family: 'Anzeigen', sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
@@ -43,7 +43,7 @@ export const CardTitle = styled.h3`
 
 export const CardText = styled.p`
   color: ${p => p.theme.colors.white};
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-style: normal;
   line-height: 1.45;

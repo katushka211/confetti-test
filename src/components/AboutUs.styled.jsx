@@ -35,7 +35,7 @@ export const AboutWrapper = styled.div`
 
 export const AboutTitle = styled.h2`
   text-align: center;
-  font-family: 'Anzeigen';
+  font-family: 'Anzeigen', sans-serif;
   font-size: 36px;
   font-weight: 500;
   font-style: normal;
@@ -62,7 +62,7 @@ export const AboutTitle = styled.h2`
 export const AboutText = styled.p`
   color: ${p => p.theme.colors.extraText};
   text-align: center;
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;

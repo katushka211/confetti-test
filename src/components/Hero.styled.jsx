@@ -97,7 +97,7 @@ export const BackgroundRight = styled.div`
 export const HeaderText = styled.h1`
   display: flex;
   flex-direction: column;
-  font-family: 'Anzeigen';
+  font-family: 'Anzeigen', sans-serif;
   font-size: 40px;
   font-weight: 500;
   font-style: normal;

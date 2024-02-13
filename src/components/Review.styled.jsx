@@ -21,7 +21,7 @@ export const ReviewWrap = styled.li`
 
 export const ReviewText = styled.p`
   color: ${p => p.theme.colors.main};
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-size: 18px;
   font-style: normal;
   line-height: 1.3;
@@ -34,7 +34,7 @@ export const ReviewText = styled.p`
 
 export const ReviewAuthor = styled.p`
   color: #565148;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-size: 16px;
   font-style: normal;
   letter-spacing: -0.16px;

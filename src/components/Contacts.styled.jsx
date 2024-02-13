@@ -32,7 +32,7 @@ export const ContactsText = styled.p`
   width: 320px;
   padding: 0 30px;
   color: ${p => p.theme.colors.main};
-  font-family: 'Anzeigen';
+  font-family: 'Anzeigen', sans-serif;
   text-align: center;
   font-size: 28px;
   font-style: normal;
@@ -68,7 +68,7 @@ export const ContactsLink = styled.a`
   align-items: center;
   color: ${p => p.theme.colors.main};
   text-align: center;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-size: 20px;
   font-style: normal;
   letter-spacing: -0.2px;

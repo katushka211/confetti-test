@@ -15,7 +15,7 @@ export const Title = styled.h2`
   color: ${p => p.theme.colors.accent};
 
   text-align: center;
-  font-family: 'Anzeigen';
+  font-family: 'Anzeigen', sans-serif;
   font-size: 36px;
   font-style: normal;
   font-weight: 500;
