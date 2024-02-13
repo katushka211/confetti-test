@@ -39,3 +39,9 @@ export const ReviewAuthor = styled.p`
   font-style: normal;
   letter-spacing: -0.16px;
 `;
+
+export const ReviewAuthorWrap = styled.div`
+  display: flex;
+  gap: 8px;
+  align-items: center;
+`;
