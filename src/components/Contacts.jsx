@@ -7,6 +7,7 @@ import {
   ContactsSection,
   ContactsText,
   ContactsWrap,
+  FormWrap,
   Wrapper,
 } from './Contacts.styled';
 import { Form } from './Form';
@@ -34,11 +35,11 @@ export const Contacts = () => {
           </ContactsLink>
         </ContactsWrap>
       </Wrapper>
-      <div style={{ overflow: 'hidden' }}>
+      <FormWrap>
         <Form />
         <BackgroundLeft />
         <BackgroundRight />
-      </div>
+      </FormWrap>
     </ContactsSection>
   );
 };

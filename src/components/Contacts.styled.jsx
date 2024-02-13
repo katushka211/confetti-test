@@ -107,7 +107,7 @@ export const BackgroundLeft = styled.div`
     transform: rotate(-38.8deg);
     @media (min-width: ${p => p.theme.media.l}) {
       top: -55px;
-      left: 475px;
+      left: -196px;
     }
   }
 `;
@@ -131,10 +131,16 @@ export const BackgroundRight = styled.div`
     transform: rotate(-9deg);
   }
   @media (min-width: ${p => p.theme.media.l}) {
-    top: 140px;
-    right: -50px;
+    top: 121px;
+    right: -169px;
 
     width: 570px;
     height: 570px;
+  }
+`;
+
+export const FormWrap = styled.div`
+  @media (min-width: ${p => p.theme.media.l}) {
+    position: relative;
   }
 `;
