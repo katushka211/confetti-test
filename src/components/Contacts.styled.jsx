@@ -12,7 +12,10 @@ export const ContactsSection = styled.section`
     justify-content: space-between;
     margin: 0 auto;
     align-items: center;
-    max-width: 1280px;
+    /* max-width: 1280px; */
+    padding: 0 112px;
+    width: 100%;
+    overflow: hidden;
   }
 `;
 
@@ -20,6 +23,9 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  @media (min-width: ${p => p.theme.media.l}) {
+    align-items: start;
+  }
 `;
 
 export const ContactsText = styled.p`
@@ -38,12 +44,22 @@ export const ContactsText = styled.p`
     width: 380px;
     padding: 0 60px;
   }
+  @media (min-width: ${p => p.theme.media.l}) {
+    text-align: start;
+    padding-left: 0;
+  }
 `;
 export const ContactsWrap = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 16px;
+  @media (min-width: ${p => p.theme.media.l}) {
+    justify-content: start;
+    align-items: flex-start;
+    width: 380px;
+    padding: 0 60px 0 0;
+  }
 `;
 
 export const ContactsLink = styled.a`
@@ -91,6 +107,8 @@ export const BackgroundLeft = styled.div`
     height: 540px;
     transform: rotate(-38.8deg);
     @media (min-width: ${p => p.theme.media.l}) {
+      top: -55px;
+      left: 475px;
     }
   }
 `;
@@ -114,8 +132,8 @@ export const BackgroundRight = styled.div`
     transform: rotate(-9deg);
   }
   @media (min-width: ${p => p.theme.media.l}) {
-    top: 240px;
-    right: -60px;
+    top: 140px;
+    right: -50px;
 
     width: 570px;
     height: 570px;

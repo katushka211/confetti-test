@@ -34,7 +34,7 @@ export const Contacts = () => {
           </ContactsLink>
         </ContactsWrap>
       </Wrapper>
-      <div>
+      <div style={{ overflow: 'hidden' }}>
         <Form />
         <BackgroundLeft />
         <BackgroundRight />
