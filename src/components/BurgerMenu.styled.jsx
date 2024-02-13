@@ -44,6 +44,10 @@ export const ButtonClose = styled.button`
   svg {
     stroke: #222222;
     fill: none;
+    &:hover,
+    &:focus {
+      stroke: ${p => p.theme.colors.accent};
+    }
   }
 `;
 
@@ -72,6 +76,10 @@ export const LinkItem = styled.li`
   letter-spacing: -0.24px;
   text-transform: uppercase;
   cursor: pointer;
+  &:hover,
+  &:focus {
+    color: ${p => p.theme.colors.accent};
+  }
   @media (min-width: ${p => p.theme.media.m}) {
     font-size: 40px;
     letter-spacing: -0.4px;
