@@ -11,8 +11,6 @@ import cardsData from '../utils/cardsData.json';
 import { useEffect, useState } from 'react';
 import { AboutSlider } from './AboutSlider';
 
-// import { AboutSlider } from './AboutSlider';
-
 export const AboutUs = () => {
   const [isMobile, setIsMobile] = useState(false);
 
@@ -26,6 +24,7 @@ export const AboutUs = () => {
       window.removeEventListener('resize', handleResize);
     };
   }, []);
+
   return (
     <AboutUsSection>
       <Container>
@@ -52,7 +51,6 @@ export const AboutUs = () => {
           </CardsList>
         )}
       </Container>
-      {/* <AboutSlider /> */}
     </AboutUsSection>
   );
 };
