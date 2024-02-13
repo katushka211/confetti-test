@@ -624,19 +624,17 @@ img {
   }
 `,Rv=()=>{const e=({className:r,onClick:i})=>O.jsx(Fd,{className:r,onClick:i,children:O.jsx("svg",{width:24,height:24,children:O.jsx("use",{href:Ot+"#arrow-right"})})}),t=({className:r,onClick:i})=>O.jsx(Fd,{className:r,onClick:i,children:O.jsx("svg",{width:24,height:24,children:O.jsx("use",{href:Ot+"#arrow-left"})})}),n={dots:!1,infinite:!0,speed:500,initialSlide:3,slidesToShow:3,nextArrow:!1,prevArrow:!1,responsive:[{breakpoint:1280,settings:{slidesToShow:2,slidesToScroll:1,nextArrow:O.jsx(e,{}),prevArrow:O.jsx(t,{})}},{breakpoint:767,settings:{dots:!0,slidesToShow:1,slidesToScroll:1,swipe:!0,arrows:!1}}]};return O.jsx(Zx,{children:O.jsx(Jx,{...n,children:jv.map((r,i)=>O.jsx(jc,{reviewText:r.review,author:r.author},i))})})};Rv.propTypes={className:jt.string,onClick:jt.func};const e_=()=>{const[e,t]=D.useState(!1);return D.useEffect(()=>{const n=()=>{t(window.innerWidth>1280)};return window.addEventListener("resize",n),n(),()=>{window.removeEventListener("resize",n)}},[]),O.jsx(Qx,{children:O.jsxs(Vx,{children:[O.jsx(Lv,{children:"Recenzje"}),e?O.jsx(Yx,{children:jv.map((n,r)=>O.jsx(jc,{reviewText:n.review,author:n.author},r))}):O.jsx(Rv,{})]})})},t_=N.section`
   position: relative;
-  overflow: hidden;
   margin-top: 124px;
+  overflow: hidden;
   @media (min-width: ${e=>e.theme.media.m}) {
     margin-top: 184px;
   }
   @media (min-width: ${e=>e.theme.media.l}) {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0 auto;
     align-items: center;
-    padding: 0 112px;
-    width: 100%;
-    overflow: hidden;
+    padding: 0 30px;
   }
 `,n_=N.div`
   display: flex;
